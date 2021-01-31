@@ -13,8 +13,8 @@ jobs:
         run: |
             sudo apt-get update
             sudo apt install clang
-      - name: Test
-        run: sbt ci
-      - name: Test publishing
-        run: sbt publishLocal
+      - name: Native link
+        run: sbt nativeLink
+      - name: Run
+        run: ./target/scala-2.13/test-os-lib-on-native-out
 

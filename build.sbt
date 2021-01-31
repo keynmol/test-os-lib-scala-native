@@ -6,3 +6,5 @@ nativeLinkStubs := true
 enablePlugins(ScalaNativePlugin)
 
 libraryDependencies += "com.lihaoyi" %%% "os-lib" % "0.7.2"
+
+name := "test-os-lib-on-native"
